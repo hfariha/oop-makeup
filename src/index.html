@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Playfair+Display:ital,wght@0,600;1,500&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,400&display=swap');
+    </style>
+  </head>
+  
+  <body>
+    <div class="sec-header"></div>
+    <!--<input type="text" placeholder="Enter a type of cosmetic product (Eg.: Powder)" id="prod_input">-->
+    <script src="main.js"></script>
+
+    <header>
+      <h1 style="font-family: 'Caveat', cursive; font-weight:600; font-size: 30px;"> Pretty U. </h1>
+      <cite> Save Money With Pretty U , Your Best Makeup Budget Planner. </cite>
+    </header>
+    <div class="makeup-wrapper">
+      <div class="sec-header">
+        <br><br><br><br><br><br><br><br><br>
+        <div style="padding-bottom: 40px;" class="makeup-search">
+          <h1 style="font-family: Poppins; font-weight: 800;">Hi, welcome to Pretty U.</h1><br>
+          <h2 style="font-family: Poppins; font-weight: 600;">Pretty U is a makeup budget-planner app where you can find whatever type of product you want based on the maximum price you set!</h2>
+          <h3 style="font-family: Poppins; font-weight: 400;"></h3>
+
+          <!-- dropdown to show product to user as a guide -->
+            <select name="" class="searchbox-2" id="makeup-product" onchange="getMakeup()">
+                <option value="" selected> Check product availability</option>
+                <option value="">Blush</option>
+                <option value="">Bronzer</option>
+                <option value="">Eyebrow</option>
+                <option value="">Eyeliner</option>
+                <option value="">Eyeshadow</option>
+                <option value="">Foundation</option>
+                <option value="">Lip Liner</option>
+                <option value="">Lipstick</option>
+                <option value="">Mascara</option>
+                <option value="">Nail Polish</option>
+            </select>
+            <br><br>
+
+            <!-- input user to fill in product type and set max price -->
+            <div class="sidebox">
+              <div style="float:left;padding-left:110px; font-family: Poppins; font-weight: 500; font-size: 25px;">
+              Product Type:
+              <br>
+              <input type="text" class="searchbox-1" placeholder="  Enter a product eg:blush" id="search-input" required><br><br>
+              </div>
+              <div style="float:right;padding-right:110px; font-family: Poppins; font-weight: 500; font-size: 25px;">
+              Price:
+              <br>
+              <input type="text" class="searchbox" placeholder="  Set a limit/max price eg:30" id="price-input" required><br><br>
+              </div></div>
+              <!-- button search to display makeup product based on user input -->
+            <button onclick=getMakeup() type="submit" class="search-btn-icon btn" id="search-btn">
+                Search <i class="fas fa-search"></i>
+            </button>
+            <br><br>
+        </div>
+
+        <!-- display all the makeup product fetch from the API -->
+        <div id="makeup-result">
+          <h2 style="text-align: center; background-color: aliceblue;" id="search-header" class="title-result">Search Result</h2>
+          <!-- button will direct to CRUD page -->
+          <button onclick=Opencrud() style="margin-left: 340px; width: 50%; height: 450%; padding-left: 40px;">ADD TO MY LIST</button>
+          <div id="makeup">
+              <!-- makeup things -->
+              <p id="error"></p>
+          </div>
+      </div>
+    </div>
+    </div>
+
+    
+
+  </body>
+</html>

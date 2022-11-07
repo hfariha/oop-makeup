@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>MAKEUP WISHLIST</title>
+    <link rel="stylesheet" href="crud.css" />
+  </head>
+  <body>
+
+    <div class="mainWrapper">
+    
+        <h1 style="background-color: white; ">💅🏼💄 Makeup WishList 💄💅🏼 </h1>
+
+        <!-- form for user input to CRUD  -->
+      <form>
+        <div class="form-group">
+          <label>File name</label><br>
+          <input  id="fileName" type="text" cols="38" rows="3" class="form-control" placeholder="Eg: userwish.txt">
+          <br><br>
+        </div>
+
+        <br>
+
+        <!-- displaydata will display overall data -->
+        <div class="form-group">
+          <label style="background-color: white;">Your Makeup List</label><br>
+          <textarea style="background-color: rgb(244, 153, 104); color: black;" id="displaydata" class="form-control" cols="38" rows="15" placeholder="Do not fill in this box!, This box will display all of your wishlist!" disabled></textarea>
+        </div>
+
+        <!-- all of this form is for user to input data -->
+        <div class="form-group">
+          <label style="background-color: white;">Makeup List #1</label><br>
+          <textarea id="makeup1" class="form-control" cols="38" rows="5" placeholder="Fill in your makeup list here!"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label style="background-color: white;">Makeup List #2</label><br>
+            <textarea id="makeup2" class="form-control" cols="38" rows="5" placeholder="Fill in your makeup list here!"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label style="background-color: white;">Makeup List #3</label><br>
+            <textarea id="makeup3" class="form-control" cols="38" rows="5" placeholder="Fill in your makeup list here!"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label style="background-color: white;">Makeup List #4</label><br>
+            <textarea id="makeup4" class="form-control" cols="38" rows="5" placeholder="Fill in your makeup list here!"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label style="background-color: white;">Makeup List #5</label><br>
+            <textarea id="makeup5" class="form-control" cols="38" rows="5" placeholder="Fill in your makeup list here!"></textarea>
+        </div>
+
+      </form>
+
+      <!-- button to navigate user and for crud  -->
+    <div class="button-center">
+
+        <button id="btnNext" onclick="Backpage()">Back</button>
+        <button id="btnCreate" class="btn btn-default">Create</button>
+        <button id="btnRead"  class="btn btn-default">Read</button>
+        <button id="btnDelete"  class="btn btn-default">Delete</button>
+        <button id="btnUpdate" class="btn btn-default">Update</button>
+      
+    </div>
+    
+    </div>
+
+    <script src="crud.js"></script>
+    <script src="style.css"></script>
+
+  </body>
+</html>

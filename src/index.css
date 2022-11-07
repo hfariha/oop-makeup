@@ -1,0 +1,181 @@
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+:root{
+  --main-color: #d654d6;
+}
+
+body{
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.6; 
+  margin: auto;
+}
+
+header{
+  position:fixed;
+  top: 0; left: 0; right: 0;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  background-color: rgba(255, 187, 230, 0.901);
+  background-repeat: no-repeat;
+  box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+}
+
+.btn{
+  font-family: inherit;
+  cursor: pointer;
+  outline: 0;
+  font-size: 1.05rem;
+}
+
+
+.cardmakeup{
+  margin: 1.2rem 0;
+  width: 30%;
+  box-shadow: 0 0 4px 3px pink;
+  text-align: center;
+  padding: 1.8rem;
+  margin-bottom: 2em;
+  background-color: rgba(246, 185, 224, 0.901);
+  
+}
+
+/* to make price and product input side by side */
+.sidebox{
+  margin: 1.3rem 0;
+  align-items: center;
+  font-size: 1.2rem;
+  outline: 0;
+  padding: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.title{
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+.prodtype ,.price{
+  font-family: 'Poppins', sans-serif;
+  font-size: large;
+}
+
+.name{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.makeup-search{
+  max-width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: rgba(255, 187, 230, 0.901);
+  border-radius: 2rem;
+  margin-bottom: 70px;
+  
+}
+
+/* style makeup output */
+#makeup{
+  margin: 1.2rem 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 12rem;
+  background-color: rgba(227, 142, 196, 0.374);
+}
+
+#prod-desc{
+  background-color: pink;
+}
+
+
+.imgmakeup{
+  width: 100%;
+  
+}
+
+.searchbox{
+  margin: 1.3rem 0;
+  align-items: stretch;
+  font-size: 1.2rem;
+  outline: 0;
+  color: #d654d6;
+  height: 75px;
+  border-radius: 2rem;
+}
+
+.searchbox-1{
+  margin: 1.3rem 0;
+  align-items: stretch;
+  font-size: 1.2rem;
+  outline: 0;
+  color: #d654d6;
+  height: 75px;
+  border-radius: 2rem;
+  
+}
+
+.searchbox-2{
+  margin: 1.3rem 0;
+  align-items: center;
+  font-size: 1.2rem;
+  outline: 0;
+  color: #d654d6;
+  height: 38px;
+  width: 340px;
+  border-radius: 2rem;
+}
+
+.searchbox::placeholder{
+  color: palevioletred;
+  opacity: 0.8;
+}
+
+.searchbox-1::placeholder{
+  color: palevioletred;
+  opacity: 1;
+}
+
+.search-btn-icon{
+  width: 95px;
+  height: 75px;
+  background: palevioletred;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  transition: all 0.4s linear;
+}
+
+.search-btn-icon:hover{
+  background-color: pink;
+}
+
+/* background img for window */
+.sec-header{
+  background-image: url("https://i.pinimg.com/564x/ae/a4/0f/aea40f7033735c9cf6493fd7aec5457f.jpg");
+  
+  
+
+}

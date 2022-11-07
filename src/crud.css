@@ -1,0 +1,23 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+      Arial, sans-serif;
+    margin: auto;
+    max-width: 38rem;
+    padding: 2rem;
+  }
+
+.form-group, .button{
+    text-align: center;
+    margin: auto;
+}
+
+body{
+    background-image: url("https://img.freepik.com/premium-vector/cosmetics-flat-color-vector-illustration-makeup-products-eyeshadows-with-lipsticks-mascara-skin-care-beauty-top-view-2d-cartoon-illustration-with-desktop-background-collection_151150-7633.jpg?w=2000");
+}
+
+.button-center{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+
+}
